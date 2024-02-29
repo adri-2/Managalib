@@ -1,0 +1,34 @@
+h1{
+    background-color: rgb(7, 83, 60);
+    color: #cc1c1c;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    
+}
+ul::after{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.bleu{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: #d4b920;
+    
+}
+.viole{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: #0a1496;
+}

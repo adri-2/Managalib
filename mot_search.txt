@@ -1,0 +1,18 @@
+flitre
+balise
+template
+decore en django
+tags
+
+Jirō Taniguchi:Un zoo en hiver,
+
+Osamu Tezuka:Zero Man,astro boy,black jack
+
+Akira Toriyama:Dragon Ball,Dragon Ball Z,Dragon Ball GT,dr. slump
+
+eiichiro oda:one piece
+
+gege akutami: jujutsu kaisen
+
+taito kubo:bleach
+

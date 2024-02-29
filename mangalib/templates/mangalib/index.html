@@ -1,0 +1,17 @@
+ {% include 'mangalib/couche/begin_page.html' %}
+
+     
+     <h1 > Bienvenu sur mangalib {{livre.titre}}  </h1>
+         <ul>
+             {% for livre in livres %}
+             <li>
+             <a href=" {% url 'mangalib:show' livre.id %} "> {{ livre.titre }} </a>
+            </li>
+             {% endfor %}
+         </ul>
+         <p><a href=" {% url 'mangalib:add_livre' %} ">[+]</a> | 
+          <a href=" {% url 'mangalib:edit_livre' %} ">[e]</a> |
+          <a href=" {% url 'mangalib:del_livre' %} ">[-]</a>
+       </p>
+      
+    {% include 'mangalib/couche/end_page.html' %}
