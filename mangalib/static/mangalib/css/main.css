@@ -32,3 +32,12 @@ ul::after{
     height: 10vh;
     color: #0a1496;
 }
+
+.ma-table th, .ma-table td{
+    border: 1px solid #011b05;
+    padding: 8px;
+    margin: 2px;
+    align-self: center;
+}
+
+

@@ -1,17 +1,40 @@
  {% include 'mangalib/couche/begin_page.html' %}
 
-     
-     <h1 > Bienvenu sur mangalib {{livre.titre}}  </h1>
-         <ul>
-             {% for livre in livres %}
-             <li>
-             <a href=" {% url 'mangalib:show' livre.id %} "> {{ livre.titre }} </a>
-            </li>
-             {% endfor %}
-         </ul>
-         <p><a href=" {% url 'mangalib:add_livre' %} ">[+]</a> | 
-          <a href=" {% url 'mangalib:edit_livre' %} ">[e]</a> |
-          <a href=" {% url 'mangalib:del_livre' %} ">[-]</a>
-       </p>
+<!--
+    pour range le form
+    en table -> form.as_table
+    en p -> 
+
+       <form method="post">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <input type="submit" value="Valider">
+       </form>
+  -->
+
+  <h1 > Bienvenu sur mangalib {{livre.titre}}  </h1>
+   <a href=" {% url 'mangalib:add_livre' %} ">[+] Ajouter livre</a> 
+    <div class="ma-table">
+  <table>
+        <tr>
+            <th>NOM</th>
+            <th>AUTEUR</th>
+            <th>QTE</th>
+            <th colspan="2">ACTIONS</th>
+        </tr>
+  
+      {% for livre in livres %}
       
+      <tr>
+      <td> <a href=" {% url 'mangalib:show' livre.id %} "> {{ livre.titre }} </a></td>
+      <td> {{ livre.auteur}} </td>
+      <td> {{ livre.quantity }} </td>
+      <td><a href=" {% url 'mangalib:edit_livre' livre.id %} ">[e]</a></td>
+      <td><a href=" {% url 'mangalib:del_livre' livre.id %} ">[-]</a></td>
+    </tr>
+      {% endfor %}
+ 
+
+</table>
+</div>
     {% include 'mangalib/couche/end_page.html' %}
