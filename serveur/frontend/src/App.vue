@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+
+import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
@@ -8,21 +9,15 @@ import HelloWorld from './components/HelloWorld.vue'
     
     <div>
      
-
-      <nav>
-        <ul>
-          <li><RouterLink to="/">Home</RouterLink></li>
-          <li><RouterLink to="/livres">Livres</RouterLink></li>
-          <li><RouterLink to="/about">About</RouterLink></li>
-        </ul>
-      </nav>
+    <Navbar/>
     </div>
   </header>
 
-  <RouterView />
+   
+    <RouterView/>
 </template>
 
-<style>
+<!-- <style>
 /* Ajoutez votre style ici */
 nav ul {
   list-style: none;
@@ -39,4 +34,4 @@ nav ul li a {
 nav ul li a.router-link-active {
   font-weight: bold;
 }
-</style>
+</style> -->

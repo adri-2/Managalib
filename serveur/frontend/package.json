@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "@headlessui/vue": "^1.7.23",
     "axios": "^1.7.9",
     "vue": "^3.5.13",
     "vue-router": "^4.4.5"
