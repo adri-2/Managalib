@@ -1,9 +1,11 @@
 
 <template>
   <div>
-  
-    <!-- <div v-show="etat === true"> -->
+    <Popup>
       <LivreForm @addLivreTolist="fetchLivres" />
+    </Popup>
+    <!-- <div v-show="etat === true"> -->
+      
     <!-- </div> -->
     <div class="bg-white" v-if="livres.length !== 0">
       <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-5xl lg:px-8">
@@ -49,7 +51,7 @@
 import { ref, onMounted } from "vue";
 import axios from "axios";
 import LivreForm from "./LivreForm.vue";
-
+import Popup from "../components/Popup.vue";
 // Déclarer une variable réactive pour stocker les livres
 const livres = ref([]);
 const etat = ref(false);
