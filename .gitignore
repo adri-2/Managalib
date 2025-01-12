@@ -9,8 +9,8 @@ lerna-debug.log*
 
 node_modules
 .DS_Store
-dist
-dist-ssr
+# dist
+# dist-ssr
 coverage
 *.local
 
@@ -27,7 +27,7 @@ coverage
 *.sln
 *.sw?
 *.sqlite3
-*.txt
+# *.txt
 
 *.tsbuildinfo
 # mangalib <
@@ -35,7 +35,7 @@ coverage
 /accounts
 /manage.py
 /serveur/backend/accounts
-
+*/migrations/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -44,7 +44,7 @@ __pycache__/
 # Distribution / packaging
 *.egg
 *.egg-info/
-dist/
+# dist/
 build/
 *.tar.gz
 *.zip
@@ -75,8 +75,8 @@ coverage.xml
 .ipynb_checkpoints/
 
 # Environments variables and secrets
-.env
-*.env
+# .env
+# *.env
 *.secrets
 
 # IDEs and editors
