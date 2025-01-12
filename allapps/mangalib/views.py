@@ -62,17 +62,17 @@ def delBook(request,id):
 #     context = {
 #        "livres": livre.objects.all() }
 #     return render(request,"mangalib/index.html",context)
-    # """
-    # if request.method == 'POSt':
-    #     form = SomeFrom(request.POST)
+#     """
+#     if request.method == 'POSt':
+#         form = SomeFrom(request.POST)
 
-    #     if form.is_valid ():
-    #         return redirect("mangalib:index")
-    # else:
-    #     form = SomeFrom()
-    # context = { "form": form}
-    # return render(request,"mangalib/index.html",context)
-    # """
+#         if form.is_valid ():
+#             return redirect("mangalib:index")
+#     else:
+#         form = SomeFrom()
+#     context = { "form": form}
+#     return render(request,"mangalib/index.html",context)
+#     """
 
 # def show(request,livre_id): 
 #     context = {"livre": get_list_or_404(livre,pk=livre_id),

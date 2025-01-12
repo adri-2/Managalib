@@ -19,11 +19,11 @@ app_name = "mangalib"
 # ]
 
 urlpatterns = [
-      path("", views.index_view, name="index"),
-         path("static/livres/", views.index_view, name="index"),
-         path("static/about/", views.index_view, name="index"),
-         path("static/", views.index_view, name="index"),
-        #  path("", views.index_view, name="index"),
+    path("", views.index_view, name="index"),
+    path("static/livres/", views.index_view, name="index"),
+    path("static/about/", views.index_view, name="index"),
+    path("static/", views.index_view, name="index"),
+    #  path("", views.index_view, name="index"),
     path('livre/', views.allBooks), 
     path('livre/<int:livre_id>/',views.showBooks), 
     path('addBooks/',views.addBooks),
